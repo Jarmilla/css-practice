@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #22b573;
+}
+
+nav {
+  display: flex;
+  top: 0;
+}
+
+.main-container {
+  margin: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.dark-container {
+  width: 30%;
+  height: 25rem;
+  background-color: #1c1717;
+  color: #f2f2f2;
+}
+
+.light-container {
+  width: 30%;
+  height: 25rem;
+  background-color: #f2f2f2;
+}
+
+h3 {
+  color: #dab752;
+}
+
+/*# sourceMappingURL=style.css.map */
