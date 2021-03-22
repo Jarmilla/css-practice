@@ -1,13 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+$my-font: "Roboto", sans-serif;
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #22b573;
+  font-family: $my-font;
 }
 nav {
-  display: flex;
-
+  display: fixed;
   top: 0;
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 100;
+    color: #f2f2f2;
+  }
 }
 
 .main-container {
@@ -19,18 +29,46 @@ nav {
 }
 
 .dark-container {
+  padding: 1rem 2rem;
   width: 30%;
-  height: 25rem;
+  height: auto;
   background-color: #1c1717;
   color: #f2f2f2;
+  line-height: 2;
 }
 
 .light-container {
+  padding: 1rem 2rem;
   width: 30%;
-  height: 25rem;
+  height: auto;
   background-color: #f2f2f2;
+  line-height: 2;
 }
 
 h3 {
   color: #dab752;
+  margin: 0;
+}
+
+@media (max-width: 414px) {
+  nav {
+    h1 {
+      font-size: 1.3rem;
+      margin: 2rem;
+    }
+  }
+  .main-container {
+    flex-direction: column;
+    margin: 1rem 3rem;
+
+    .dark-container,
+    .light-container {
+      width: 80%;
+      height: auto;
+    }
+
+    h3 {
+      padding: 0;
+    }
+  }
 }
