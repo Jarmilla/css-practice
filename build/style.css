@@ -30,7 +30,7 @@ nav h1 {
 .dark-container {
   padding: 1rem 2rem;
   width: 30%;
-  height: auto;
+  height: 23rem;
   background-color: #1c1717;
   color: #f2f2f2;
   line-height: 2;
@@ -49,15 +49,46 @@ h3 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #dab752;
+}
+a:hover {
+  color: #1c1717;
+}
+
 @media (max-width: 414px) {
   nav h1 {
     font-size: 1.3rem;
-    margin: 2rem;
+    margin: 3rem;
   }
 
   .main-container {
     flex-direction: column;
     margin: 1rem 3rem;
+    font-size: 0.8rem;
+  }
+  .main-container .dark-container,
+.main-container .light-container {
+    width: 80%;
+    height: auto;
+  }
+  .main-container h3 {
+    padding: 0;
+  }
+}
+@media (max-width: 1200px) {
+  nav h1 {
+    font-size: 1.3rem;
+    margin: 3rem;
+  }
+
+  .main-container {
+    flex-direction: column;
+    margin: 1rem 3rem;
+    font-size: 1rem;
   }
   .main-container .dark-container,
 .main-container .light-container {
