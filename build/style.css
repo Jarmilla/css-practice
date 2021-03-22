@@ -8,15 +8,23 @@ body {
 }
 
 nav {
-  display: fixed;
-  top: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  height: 5rem;
 }
-nav h1 {
+nav .header {
   text-align: center;
   text-transform: uppercase;
   font-size: 3rem;
   font-weight: 100;
   color: #f2f2f2;
+  padding: 0.5rem;
+}
+nav img {
+  float: right;
+  width: 40px;
+  padding: 1rem;
 }
 
 .main-container {
@@ -60,7 +68,7 @@ a:hover {
 }
 
 @media (max-width: 414px) {
-  nav h1 {
+  nav .header {
     font-size: 1.3rem;
     margin: 3rem;
   }
@@ -80,7 +88,7 @@ a:hover {
   }
 }
 @media (max-width: 1200px) {
-  nav h1 {
+  nav .header {
     font-size: 1.3rem;
     margin: 3rem;
   }
